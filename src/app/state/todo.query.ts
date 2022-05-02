@@ -21,7 +21,8 @@ export class TodoQuery extends Query<TodoState> {
 
   getLoaded(): Observable<boolean> {
     return this.select(state => {
-      console.log('state.isLoaded:', state.isLoaded);
+      console.log('state.isLoaded:', state.sisLoaded);
+
       return state.isLoaded;
     });
   }
